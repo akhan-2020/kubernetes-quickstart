@@ -1,0 +1,24 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: "2022-05-08T18:21:38Z"
+  managedFields:
+  - apiVersion: rbac.authorization.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:roleRef: {}
+      f:subjects: {}
+    manager: okhttp
+    operation: Update
+    time: "2022-05-08T18:21:38Z"
+  name: kubernetes-quickstart-view
+  namespace: default
+  resourceVersion: "486206"
+  uid: 2d783c35-9064-44cc-8d57-6823d9e90724
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: view
+subjects:
+- kind: ServiceAccount
+  name: kubernetes-quickstart
