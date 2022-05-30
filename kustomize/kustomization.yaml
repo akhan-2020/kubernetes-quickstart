@@ -1,7 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - kubernetes-quickstart-sa.yaml
-  - kubernetes-quickstart-rb.yaml
   - kubernetes-quickstart-deployment.yaml
   - kubernetes-quickstart-service.yaml
