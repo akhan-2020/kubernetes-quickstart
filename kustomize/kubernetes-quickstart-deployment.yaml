@@ -34,7 +34,7 @@ spec:
       - env:
         - name: KUBERNETES_NAMESPACE
           value: default
-        image: akhan2017/kubernetes-quickstart:1.0.0-SNAPSHOT
+        image: akhan2017/kubernetes-quickstart:v2.0.0-SNAPSHOT
         imagePullPolicy: Always
         name: kubernetes-quickstart
         ports:

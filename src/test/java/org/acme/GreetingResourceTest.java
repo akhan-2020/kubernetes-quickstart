@@ -21,7 +21,7 @@ public class GreetingResourceTest {
     @Test
     public void testDelayedHelloEndpoint() {
         given()
-                .when().get("/delayedHello")
+                .when().get("/v2/delayedHello")
                 .then()
                 .statusCode(200)
                 .body(is("Delayed Hello from RESTEasy Reactive"));
