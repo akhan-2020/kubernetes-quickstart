@@ -6,7 +6,7 @@ metadata:
     deployment.kubernetes.io/revision: "1"
   labels:
     app.kubernetes.io/name: kubernetes-quickstart
-    app.kubernetes.io/version: v2.0.0-SNAPSHOT
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
   name: kubernetes-quickstart
   namespace: default
 spec:
