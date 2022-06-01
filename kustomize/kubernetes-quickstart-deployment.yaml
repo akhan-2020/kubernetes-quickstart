@@ -16,7 +16,7 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: kubernetes-quickstart
-      app.kubernetes.io/version: v2.0.0-SNAPSHOT
+      app.kubernetes.io/version: 1.0.0-SNAPSHOT
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -28,13 +28,13 @@ spec:
         app.quarkus.io/build-timestamp: 2022-05-28 - 19:09:17 +0000
       labels:
         app.kubernetes.io/name: kubernetes-quickstart
-        app.kubernetes.io/version: v2.0.0-SNAPSHOT
+        app.kubernetes.io/version: 1.0.0-SNAPSHOT
     spec:
       containers:
       - env:
         - name: KUBERNETES_NAMESPACE
           value: default
-        image: akhan2017/kubernetes-quickstart:v2.0.0-SNAPSHOT
+        image: akhan2017/kubernetes-quickstart:1.0.0-SNAPSHOT
         imagePullPolicy: Always
         name: kubernetes-quickstart
         ports:
