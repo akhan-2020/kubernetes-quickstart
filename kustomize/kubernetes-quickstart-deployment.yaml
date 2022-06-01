@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     app.quarkus.io/build-timestamp: 2022-05-28 - 19:09:17 +0000
-    deployment.kubernetes.io/revision: "1"
+    deployment.kubernetes.io/revision: "2"
   labels:
     app.kubernetes.io/name: kubernetes-quickstart
     app.kubernetes.io/version: v2.0.0-SNAPSHOT
